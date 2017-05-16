@@ -28,7 +28,6 @@ function! SwitchToNextBuffer(incr)
     endif
   endwhile
   execute ":redraw"
-  execute ":ls".new
 endfunction
 
 " goto definition 

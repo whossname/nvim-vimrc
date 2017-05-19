@@ -2,13 +2,17 @@
 let g:deoplete#enable_at_startup = 1
 " Let <Tab> also do completion
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-let g:UltiSnipsExpandTrigger="<C-s>"
-let g:UltiSnipsJumpForwardTrigger="<C-s>"
+
+" snippets
+let g:UltiSnipsExpandTrigger="<S-Tab>"
+let g:UltiSnipsJumpForwardTrigger="<S-Tab>"
+
+" super tab?
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 " close the preview window when you're not using it
 let g:SuperTabClosePreviewOnPopupClose = 1
 
-" syntax settings
+" error linting settings
 let g:neomake_list_height = 3
 let g:neomake_javascript_enabled_makers = ['eslint']
 let g:neomake_cpp_enabled_makers = ['gcc']

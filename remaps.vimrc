@@ -3,8 +3,8 @@
 let mapleader =" "
 
 " change buffer previous/next
-nnoremap <leader>j :call SwitchToNextBuffer(-1)<CR>
-nnoremap <leader>k :call SwitchToNextBuffer(1)<CR>
+nnoremap <leader>j :bprevious <CR>
+nnoremap <leader>k :bnext <CR>
 
 function! SwitchToNextBuffer(incr)
   let help_buffer = (&filetype == 'help')

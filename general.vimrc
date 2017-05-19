@@ -1,3 +1,6 @@
+" airline HUD
+let g:airline#extensions#tabline#enabled = 1
+
 " tabs
 set expandtab 
 set shiftwidth=2

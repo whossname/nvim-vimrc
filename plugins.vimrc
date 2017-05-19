@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
     " file navigation
     Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } 
     Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'vim-airline/vim-airline'
     " close buffer
     Plug 'qpkorr/vim-bufkill'
     
@@ -41,5 +42,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'ternjs/tern_for_vim'
     " elixir
     Plug 'slashmili/alchemist.vim'
+    " Java
+    Plug 'artur-shaik/vim-javacomplete2'
 call plug#end()
 

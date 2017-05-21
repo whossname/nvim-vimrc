@@ -21,6 +21,7 @@ let g:neomake_cpp_gcc_maker = {
     \ "args": [ "\--std=c++11"]
     \ }
 let g:neomake_elixir_enabled_makers = ['mix', 'credo']
+
 command Errors lopen
 
 autocmd! BufWritePost,BufEnter * Neomake

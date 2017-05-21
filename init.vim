@@ -1,8 +1,11 @@
-source $HOME/.config/nvim/plugins.vimrc     " plugins    
-source $HOME/.config/nvim/general.vimrc     " general
-source $HOME/.config/nvim/assistance.vimrc  " assistance
-source $HOME/.config/nvim/remaps.vimrc      " remaps
+" general
+runtime ./plugins.vimrc     " plugins
+runtime ./general.vimrc     " general
+runtime ./assistance.vimrc  " assistance
+runtime ./remaps.vimrc      " remaps
 
-" file type plugins
-source $HOME/.config/nvim/ftplugin/java.vim     " java 
+" language specific
+au FileType java       runtime ./ftplugin/java.vim         " java
+au FileType javascript runtime ./ftplugin/javascript.vim   " javascript
+au FileType ruby       runtime ./ftplugin/ruby.vim         " ruby
 

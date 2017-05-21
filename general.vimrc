@@ -17,10 +17,8 @@ set lazyredraw          " redraw only when we need to.
 set showmatch           " highlight matching [{()}]
 colo ron
 
-" startup
+" remember history after closing files 
 set clipboard=unnamedplus
-
-" persist undos
 set undofile
 
 " tmux
@@ -35,8 +33,4 @@ endif
 " leader timeout
 set notimeout
 set ttimeout
-
-" Language specific
-" JSX
-let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 

@@ -30,6 +30,9 @@ function! SwitchToNextBuffer(incr)
   execute ":redraw"
 endfunction
 
+" ctrl-p
+let g:ctrlp_map = '<leader>p'
+
 " goto definition 
 map <leader>g <c-]>
 
@@ -52,14 +55,6 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
-
-" rails
-nnoremap <leader>rm :Rmodel<Space>  
-nnoremap <leader>rc :Rcontroller<Space>  
-nnoremap <leader>rh :Rhelper<Space>   
-nnoremap <leader>rv :Rview<Space>   
-nnoremap <leader>rf :Rfunctionaltest<Space>   
-nnoremap <leader>ru :Runittest<Space>   
 
 " neomake
 nnoremap <leader>e :ll<CR>

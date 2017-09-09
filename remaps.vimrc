@@ -6,31 +6,7 @@ let mapleader =" "
 nnoremap <leader>j :bprevious <CR>
 nnoremap <leader>k :bnext <CR>
 
-function! SwitchToNextBuffer(incr)
-  let help_buffer = (&filetype == 'help')
-  let current = bufnr("%")
-  let last = bufnr("$")
-  let new = current + a:incr
-  while 1
-    if new != 0 && bufexists(new) && ((getbufvar(new, "&filetype") == 'help') == help_buffer)
-      execute ":buffer ".new
-      break
-    else
-      let new = new + a:incr
-      if new < 1
-        let new = last
-      elseif new > last
-        let new = 1
-      endif
-      if new == current
-        break
-      endif
-    endif
-  endwhile
-  execute ":redraw"
-endfunction
-
-" ctrl-p
+" ctrl-p (search files)
 let g:ctrlp_map = '<leader>p'
 
 " goto definition 
@@ -47,10 +23,7 @@ nnoremap <leader>d :BD<CR>
 " nerd tree 
 nnoremap <leader><leader> :NERDTreeToggle<CR>
 
-" dispatch
-nnoremap <leader>m :Make<CR>
-
-" splits
+" split navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>

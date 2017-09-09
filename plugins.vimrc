@@ -20,7 +20,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'ervandew/supertab'
     " syntax checking
 	Plug 'neomake/neomake'
-    Plug 'dojoteef/neomake-autolint'
+    "Plug 'dojoteef/neomake-autolint'
     " testing
     Plug 'janko-m/vim-test' 
     
@@ -44,5 +44,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'slashmili/alchemist.vim'
     " Java
     Plug 'artur-shaik/vim-javacomplete2'
+    " Gradle (recognise as Groovy)
+    Plug 'tfnico/vim-gradle'
 call plug#end()
 

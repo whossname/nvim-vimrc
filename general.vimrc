@@ -10,12 +10,12 @@ set expandtab       " tabs are spaces
 
 " UI
 set number              " show line numbers
-set relativenumber
+set relativenumber      " relative position
 set showcmd             " show command in bottom bar
 filetype indent on      " load filetype-specific indent files
 set lazyredraw          " redraw only when we need to.
 set showmatch           " highlight matching [{()}]
-colo ron
+colo ron                " theme
 
 " remember history after closing files 
 set clipboard=unnamedplus

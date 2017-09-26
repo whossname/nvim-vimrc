@@ -24,7 +24,7 @@ let g:neomake_cpp_gcc_maker = {
 let g:neomake_elixir_enabled_makers = ['mix', 'credo']
 
 fun! Lint()
-  if &ft =~ 'java'
+  if &ft ==? 'java'
     Neomake! gradle
     return
   endif

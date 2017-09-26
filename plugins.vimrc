@@ -20,7 +20,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'ervandew/supertab'
     " syntax checking
 	Plug 'neomake/neomake'
-    "Plug 'dojoteef/neomake-autolint'
     " testing
     Plug 'janko-m/vim-test' 
     

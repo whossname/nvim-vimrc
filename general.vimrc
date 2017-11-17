@@ -34,3 +34,5 @@ endif
 set notimeout
 set ttimeout
 
+" file search
+set path+=**

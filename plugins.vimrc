@@ -24,8 +24,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'janko-m/vim-test' 
     
     " EDITING
-    " auto pairs 
-    Plug 'jiangmiao/auto-pairs'
     " fix line endings
     Plug 'lfilho/cosco.vim'
     " repeatable remaps
@@ -39,11 +37,15 @@ call plug#begin('~/.vim/plugged')
     " JavaScript
     Plug 'carlitux/deoplete-ternjs'
     Plug 'ternjs/tern_for_vim'
+    Plug 'bendavis78/vim-polymer'
     " elixir
     Plug 'slashmili/alchemist.vim'
     " Java
     Plug 'artur-shaik/vim-javacomplete2'
     " Gradle (recognise as Groovy)
     Plug 'tfnico/vim-gradle'
+    " Elm
+    Plug 'elmcast/elm-vim'
 call plug#end()
 
+let g:polyglot_disabled = ['elm']

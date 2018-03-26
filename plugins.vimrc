@@ -1,6 +1,7 @@
 " :PlugUpgrade
 " :PlugUpdate
 " :PlugInstall
+" Close and reopen vim before installing
 
 " plugins
 call plug#begin('~/.vim/plugged')
@@ -38,6 +39,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'carlitux/deoplete-ternjs'
     Plug 'ternjs/tern_for_vim'
     Plug 'bendavis78/vim-polymer'
+    Plug 'posva/vim-vue'
+    " elm
+    Plug 'elmcast/elm-vim'
     " elixir
     Plug 'slashmili/alchemist.vim'
     " Java
@@ -48,4 +52,4 @@ call plug#begin('~/.vim/plugged')
     Plug 'elmcast/elm-vim'
 call plug#end()
 
-let g:polyglot_disabled = ['elm']
+

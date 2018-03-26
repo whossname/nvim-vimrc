@@ -21,6 +21,7 @@ let g:neomake_cpp_gcc_maker = {
     \ "exe": "g++",
     \ "args": [ "\--std=c++11"]
     \ }
+
 let g:neomake_elixir_enabled_makers = ['mix', 'credo']
 
 fun! Lint()
